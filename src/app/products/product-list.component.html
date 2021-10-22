@@ -42,9 +42,9 @@
 
                    </td>
                     <th>{{ product.productName }}</th>
-                    <th>{{ product.productCode }}</th>
+                    <th>{{ product.productCode | lowercase }}</th>
                     <th>{{ product.releaseDate }}</th>
-                    <th>{{ product.price }}</th>
+                    <th>{{ product.price | currency: 'KES':'symbol': '1.2-2'}}</th>
                     <th>{{ product.starRating }}</th>
                   </tr>
                 </tbody>
